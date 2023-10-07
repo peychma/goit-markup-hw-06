@@ -25,6 +25,7 @@ ul {
     margin: 0;
     padding: 0;
 }
+h1,
 h2,
 h3,
 h4,
@@ -38,41 +39,34 @@ p {
     padding: 0;
 }
 .container-new {
-    width: 100%;
     display: flex;
+    padding: 0 16px;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
 }
 .footer .container-footer {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
 }
 .header .container-header {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    padding: 0 16px;
     flex-direction: row;
 }
 
 @media only screen and (min-width: 319.98px) {
     .container-new {
-        max-width: 288px;  
-        margin: auto;  
-    }
-    .header .nav .logo {
-        margin-right: 149px;
-        margin-left: 16px;
+        width: 320px;
     }
     .modal-wind {
-        width: 288px;
+        width: 320px;
         height: 623px;
         transform: translate(-50%, -50%) scale(1);
         margin: 8px 16px;
@@ -83,12 +77,9 @@ p {
        fill: #2E2F42;
        width: 16.8px;
        height: 14.4px;
-       align-items: end;
     }
-    .header .nav .list {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+    .header .address {
+        display: none;
     }
     .footer .wow {
         text-align: center;
@@ -97,42 +88,42 @@ p {
         text-align: center;
     }
     .header .container-header {
-        margin: auto;
-        min-width: 320px;            
-        height: 56px;
+        margin: 0 auto;
+        width: 320px;            
         display: flex;
-        padding: 0;
-        max-width: 288px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header {
+        padding: 18px 0;
+    }
+    .header .nav .list {
+        display: none;
     }
     .subs-paragraf {
         text-align: center;
     }
     .first-section .main-title {
         font-size: 36px;
-        max-width: 288px;
-        padding: 72px 40px;
-        margin: 0 16px;
         line-height: 1.07;
+        margin-bottom: 72px;
+        width: 160px;
     }
     .footer .container-footer {
         row-gap: 72px;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 288px;
-    }
-    .header .address .contacts .links {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+        width: 320px;
     }
     .first-section {
-        height: 432px;
         background-image:
         linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/office_3.jpg);
-        width: 100%;
+        max-width: 320px;
+        padding: 72px 0;
+        margin: 0 auto;
     }
  .third-section .teem {
      row-gap: 72px;
@@ -143,21 +134,18 @@ p {
  }
  .second-section .about-us .title {
         font-size: 36px;
-        font-weight: 500;
+        font-weight: 700;
         text-align: center;
 }
  .second-section .about-us .text {
         font-size: 16px;
         font-weight: 500;
-        margin: 0 16px;
 }
 .second-section .about-us {
-    width: 100%;
     row-gap: 72px;
 }
  .fourth-section .portfolio {
     row-gap: 72px;
-    width: 100%;
  }
  .fourth-section .image {
     width: 288px;
@@ -192,9 +180,14 @@ p {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: auto;
-        height: 71px;
-        max-width: 736px;
+        margin: 0 auto;
+        width: 768px;
+    }
+    .header {
+        padding: 14px 0;
+    }
+    .header .nav {
+        gap: 120px;
     }
     .menu {
         display: none;
@@ -209,10 +202,6 @@ p {
     .footer .www {
         margin-left: 20px;
     }
-    .header .nav .logo {
-        margin-right: 120px;
-        margin-left: 0;
-    }
     .subs-paragraf {
         text-align: left;
     }
@@ -220,10 +209,10 @@ p {
         text-align: left;
     }
    .container-new {
-       max-width: 736px;
+       width: 768px;
    }
    .footer .container-footer {
-    max-width: 496px;
+    width: 496px;
     justify-content: left;
    }
     .third-section .teem {
@@ -233,7 +222,7 @@ p {
     .fourth-section .portfolio {
         column-gap: 24px;
         row-gap: 72px;
-        max-width: 100%;
+        padding: 0;
     }
     .fourth-section .portfolio .paragraf {
         width: 356px;
@@ -247,7 +236,6 @@ p {
     }
     .second-section .about-us .title {
         text-align: left;
-        margin: 0 16px;
         font-weight: 700;
     }
     .second-section .about-us .paragraf {
@@ -257,36 +245,31 @@ p {
         display: none;
     }
     .first-section {
-        height: 436px;
         padding: 112px 0;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/office_2.jpg);
-        width: 100%;
+        max-width: 768px;
     }
     .first-section .main-title {
         font-size: 56px;
-        max-width: 496px;
-        margin: 0px 120px 36px 120px;
-        padding: 0;
+        margin-bottom: 36px;
+        width: 496px;
     }
     .header .address .contacts .links {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
         font-size: 12px;
+    }
+    .header .address {
+        display: flex;
     }
     .header .address .contacts {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         row-gap: 6px;
-        justify-content: flex-end;
-        margin-left: 122px;
     }
     .header .nav .list {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+        flex-direction: row;
+        display: flex;
+        gap: 40px;
     } 
 }
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -297,14 +280,14 @@ p {
 }
 @media only screen and (min-width: 1157.98px) {
     .container-new {
-        max-width: 1128px;
+        width: 1158px;
+        padding: 0 15px;
     }
     .header .address .contacts .links {
         font-size: 16px;
-        padding: 24px 0;
     }
-    .header .nav .logo {
-        margin-right: 76px;
+    .header .nav {
+        gap: 76px;
     }
     .footer .wow {
         text-align: left;
@@ -314,11 +297,14 @@ p {
     }
     .header .container-header {
         display: flex;
-        max-width: 1128px;
+        width: 1158px;
         justify-content: space-between;
         align-items: center;
-        margin: auto;
+        margin: 0 auto;
         padding: 0 15px;
+    }
+    .header {
+        padding: 24px 0;
     }
     .second-section .about-us .paragraf {
         width: calc((100% - 72px) / 4);
@@ -333,6 +319,7 @@ p {
     .second-section .about-us .title {
         font-size: 20px;
         text-align: left;
+        font-weight: 500;
         margin: 0;
     }
    .pic-icon {
@@ -360,10 +347,12 @@ p {
         padding-bottom: 120x;
     }
     .footer .container-footer {
-        max-width: 1128px;
-        margin: auto;
+        width: 1158px;
+        padding: 0 15px;
+        margin: 0 auto;
         display: flex;
         align-items: baseline;
+        justify-content: center;
     }
     .footer .container-footer .fff {
         margin-right: 120px;
@@ -374,7 +363,6 @@ p {
     }
     .fourth-section .portfolio {
         row-gap: 48px;
-        width: 100%;
     }
     .fourth-section .image {
         width: 360px;
@@ -384,14 +372,13 @@ p {
         width: 360px;
     }
     .first-section {
-        height: 600px;
-        max-width: 1440px;
+        max-width: 1158px;
         padding: 188px 0;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
     }
     .first-section .main-title {
-        margin: 0px 316px 48px 316px;
+        margin-bottom: 48px;
         padding: 0;
     }
     .modal-wind {
@@ -532,7 +519,7 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 .third-section .teem .first{
     padding: 32px 0;
@@ -719,9 +706,6 @@ color: #404BBF;
 }
 .header .nav .list {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
 }
 .header {
     border-bottom: 1px solid #e7e9fc;
