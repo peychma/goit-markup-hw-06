@@ -13,5 +13,5 @@ JavaScript
 
 ## Links
 
-[Live Page](https://peychma.github.io/goit-markup-hw-06/)  
+[Live Page](https://goit-markup-hw-06-steel.vercel.app/)  
 [GitHub](https://github.com/peychma/goit-markup-hw-06)
