@@ -13,5 +13,5 @@ JavaScript
 
 ## Links
 
-[Live Page](https://peychma.github.io/goit-markup-hw-06/)
+[Live Page](https://peychma.github.io/goit-markup-hw-06/)  
 [GitHub](https://github.com/peychma/goit-markup-hw-06)
